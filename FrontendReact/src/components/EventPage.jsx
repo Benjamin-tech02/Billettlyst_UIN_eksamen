@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchAllFestivals } from '../api/ticketmaster';
+import { fetchAllFestivals } from '../api/Ticketmaster';
 
 const EventPage = () => {
     const { id } = useParams(); 

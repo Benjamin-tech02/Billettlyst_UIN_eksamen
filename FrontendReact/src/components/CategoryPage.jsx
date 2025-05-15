@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchEventsByKeyword } from '../api/ticketmaster';
+import { fetchEventsByKeyword } from '../api/Ticketmaster';
 
 const CategoryPage = () => {
     const { slug } = useParams();

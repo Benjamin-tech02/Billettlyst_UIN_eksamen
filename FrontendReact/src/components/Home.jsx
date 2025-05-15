@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchAllFestivals } from '../api/ticketmaster';
+import { fetchAllFestivals } from '../api/Ticketmaster';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
               <img src={event.images[0].url} alt={event.name} />
             )}
             <h3>{event.displayName}</h3>
-            <Link to={/event/${event.id}}>
+            <Link to={`/event/${event.id}`}>
               <button>Les mer om {event.displayName}</button>
             </Link>
           </article>
