@@ -4,7 +4,7 @@ import { fetchAllFestivals } from '../api/Ticketmaster';
 
 const EventPage = () => {
     const { id } = useParams(); 
-    const [event, setEvent] = useState(null);
+    const [event, setEvent] = useState({});
     const [setError] = useState(null);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const EventPage = () => {
         };
 
         fetchData();
-    }, [id]);
+    }, [id, setError]);
 
     return (
         <article>

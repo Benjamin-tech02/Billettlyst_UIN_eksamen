@@ -19,7 +19,7 @@ const CategoryPage = () => {
         };
 
         fetchData();
-    }, [slug]);
+    }, [setError, slug]);
 
     return (
         <section>
