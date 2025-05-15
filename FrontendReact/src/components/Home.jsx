@@ -3,11 +3,11 @@ import { fetchAllFestivals } from '../api/Ticketmaster';
 import EventCard from './EventCard';
 
 const Home = () => {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    fetchAllFestivals().then(setEvents);
-  }, []);
+    const [events, setEvents] = useState([]);
+    
+    useEffect(() => {
+        fetchAllFestivals().then(setEvents);
+}, []);
 
     return (
         <main>
