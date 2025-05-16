@@ -62,3 +62,14 @@ export const fetchEventsByKeyword = async (keyword) => {
         return [];
     }
 };
+
+export const fetchEventsByCity = async (city) => {
+    try {
+        const res = await fetch(`${BASE_URL}events.json?city=${city}&size=10&apikey=${API_KEY}`);
+        const data = await res.json();
+        return data._embedded?.events || [];
+    } catch (error) {
+        console.error(`Feil ved henting av events for ${city}:`, error);
+        return [];
+    }
+};
