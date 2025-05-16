@@ -28,8 +28,8 @@ const EventPage = () => {
     }, [id, setError]);
 
     return (
-        <article>
-            <h1>{event.displayName}</h1>
+        <article className="event-page-artikkel">
+            <h3>{event.displayName}</h3>
             {event.images?.[0]?.url && (
                 <img src={event.images[0].url} alt={event.name} />
             )}
