@@ -4,6 +4,7 @@ import EventPage from './components/EventPage';
 import CategoryPage from './components/CategoryPage';
 import Dashboard from './components/Dashboard';
 import Header from './components/Header';
+import './styles/style.css';
 
 function App() {
     return (
