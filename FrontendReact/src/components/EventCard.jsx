@@ -4,7 +4,7 @@ const EventCard = ({ event, clickable = true }) => {
     if (!event) return null;
 
     return (
-        <article>
+        <article className="event-card-artikkel">
             {event.images?.[0]?.url && (
                 <img src={event.images[0].url} alt={event.name} />
             )}
