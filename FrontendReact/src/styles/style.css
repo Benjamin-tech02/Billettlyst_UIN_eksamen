@@ -136,3 +136,12 @@ header div a{
     display: flex;
     width: fit-content;
 }
+
+.dashboard-seksjon{
+    margin-bottom: 14.5rem;;
+}
+
+footer{
+    margin-top: 5rem;
+    font-size: 2rem;
+}

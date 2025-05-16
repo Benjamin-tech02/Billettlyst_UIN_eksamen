@@ -1,6 +1,6 @@
 const Dashboard = () => {
     return (
-        <section>
+        <section className="dashboard-seksjon">
             <h1>Dashboard</h1>
             <form>
                 <label> Brukernavn:
